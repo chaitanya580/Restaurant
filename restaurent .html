@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TasteBuds Restaurant</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            margin: 0;
+            background: #faf6f2;
+            color: #333;
+        }
+        header {
+            background-color: #b93c2b;
+            color: #fff;
+            padding: 30px 0 20px 0;
+            text-align: center;
+        }
+        nav {
+            margin: 0;
+            background: #a32b1c;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 16px 24px;
+            display: inline-block;
+            font-size: 1.1em;
+            transition: background 0.2s;
+        }
+        nav a:hover {
+            background: #d45d4c;
+        }
+        .container {
+            max-width: 900px;
+            margin: 30px auto;
+            background: #fff;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+            border-radius: 10px;
+            padding: 32px;
+        }
+        h2 {
+            color: #b93c2b;
+            margin-top: 0;
+        }
+        .menu {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 24px;
+        }
+        .menu-item {
+            flex: 1 1 250px;
+            background: #f6e9e6;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.07);
+        }
+        .menu-item h3 {
+            margin-top: 0;
+            color: #a32b1c;
+        }
+        .price {
+            float: right;
+            color: #b93c2b;
+            font-weight: bold;
+        }
+        .about, .contact {
+            margin-top: 24px;
+        }
+        .contact-info {
+            margin-top: 8px;
+            line-height: 1.6;
+        }
+        footer {
+            background: #a32b1c;
+            color: #fff;
+            text-align: center;
+            padding: 16px 0;
+            margin-top: 40px;
+            font-size: 1em;
+        }
+        @media (max-width: 700px) {
+            .container { padding: 15px; }
+            .menu { flex-direction: column; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>TasteBuds Restaurant</h1>
+        <p>Delicious Flavors, Cozy Atmosphere</p>
+    </header>
+    <nav>
+        <a href="#menu">Menu</a>
+        <a href="#about">About Us</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <div class="container">
+        <section id="menu">
+            <h2>Our Menu</h2>
+            <div class="menu">
+                <div class="menu-item">
+                    <h3>Margherita Pizza <span class="price">₹299</span></h3>
+                    <p>Classic pizza topped with fresh mozzarella, tomatoes, and basil.</p>
+                </div>
+                <div class="menu-item">
+                    <h3>Pasta Alfredo <span class="price">₹349</span></h3>
+                    <p>Creamy Alfredo sauce tossed with penne pasta and parmesan cheese.</p>
+                </div>
+                <div class="menu-item">
+                    <h3>Paneer Tikka <span class="price">₹249</span></h3>
+                    <p>Grilled paneer cubes marinated in spicy yogurt and served with chutney.</p>
+                </div>
+                <div class="menu-item">
+                    <h3>Veggie Burger <span class="price">₹199</span></h3>
+                    <p>Homemade veggie patty, lettuce, tomato, and special sauce in a fresh bun.</p>
+                </div>
+                <div class="menu-item">
+                    <h3>Chocolate Brownie <span class="price">₹149</span></h3>
+                    <p>Rich, gooey brownie served warm with a scoop of vanilla ice cream.</p>
+                </div>
+            </div>
+        </section>
+        <section id="about" class="about">
+            <h2>About Us</h2>
+            <p>
+                TasteBuds Restaurant is your neighborhood spot for fresh, flavorful food and friendly service. 
+                We’re passionate about using quality ingredients and creating a welcoming space for families and friends to enjoy a great meal together.
+            </p>
+        </section>
+        <section id="contact" class="contact">
+            <h2>Contact</h2>
+            <div class="contact-info">
+                <strong>Address:</strong> 123 Foodie Lane, Flavor Town, India<br>
+                <strong>Phone:</strong> +91 8309125139<br>
+                <strong>Email:</strong> hello@tastebuds.com
+            </div>
+        </section>
+    </div>
+    <footer>
+        &copy; 2025 TasteBuds Restaurant. All rights reserved.
+    </footer>
+</body>
+</html>
